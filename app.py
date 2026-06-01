@@ -175,7 +175,29 @@ JOKES = [
     {"q": "Unsur apa yang paling sombong?", "a": "Gold (Au) — karena selalu Au-some! ✨"},
     {"q": "Apa yang dikatakan H₂SO₄ kepada Ba(OH)₂?", "a": "'Kita bisa netral, kok!' 🧪"},
     {"q": "Kenapa elektron tidak pernah tersesat?", "a": "Karena mereka selalu tahu orbitnya! 🌀"},
-    {"q": "Bagaimana cara ilmuwan menyegarkan napas?", "a": "Dengan minum Helium — biar keren! He-he! 😆"},
+    {"q": "Bagaimana cara ilmuwan menyegarkan napas?", "a": "Dengan minum Helium — biar keren! He-he! 😆"}, 
+    JOKES = [
+    {"q": "Kenapa natrium (Na) selalu jadi sahabat yang baik?", "a": "Karena dia sangat reaktif kalau diajak jalan-jalan! 💥"},
+    {"q": "Apa sebutan untuk alkana yang sedang jatuh cinta?", "a": "Alkana-kenanglah daku di dalam hatimu... 🥰"},
+    {"q": "Kenapa ikatan kovalen adalah hubungan ideal?", "a": "Karena prinsip mereka adalah saling berbagi (elektron) secara adil! 🤝"},
+    {"q": "Apa yang dikatakan asam klorida (HCl) saat mau berpisah dengan NaOH?", "a": "Sampai jumpa di titik ekivalen, ya! 💧"},
+    {"q": "Kenapa unsur halogen (Golongan VIIA) sangat agresif?", "a": "Karena mereka kurang satu elektron lagi untuk mencapai kebahagiaan sempurna (oktet)! 💍"},
+    {"q": "Kenapa es batu mengapung di atas air?", "a": "Biar dia bisa pamer kalau densitasnya lebih rendah! 🧊"},
+    {"q": "Kenapa gas mulia (Golongan VIIIA) selalu jomblo?", "a": "Karena mereka sudah stabil dan enggan berikatan dengan siapa pun! 🛑"},
+    {"q": "Apa bedanya ahli kimia organik dengan orang biasa saat melihat cincin?", "a": "Orang biasa melihat berlian, ahli kimia melihat struktur Benzena! 💍⬡"},
+    {"q": "Kenapa indikator PP (Fenolftalein) suka panik kalau ketemu basa?", "a": "Karena mukanya langsung berubah jadi merah muda merona! 🌸"},
+    {"q": "Apa hidangan penutup favorit para laboran?", "a": "Kue tart-rat (Tartrate)! 🍰"},
+    {"q": "Kenapa reaksi eksotermik sangat populer di musim dingin?", "a": "Karena mereka selalu membagikan kehangatan (kalor) ke lingkungan sekitar! 🔥"},
+    {"q": "Unsur apa yang paling suka memasak?", "a": "Tembaga (Cu), karena dia adalah 'Cu-linery' sejati! 🍳"},
+    {"q": "Kenapa partikel koloid tidak pernah jatuh ke dasar?", "a": "Karena mereka sibuk nge-dance pakai Gerak Brown! 🕺"},
+    {"q": "Apa yang dikatakan atom karbon saat bertemu tiga atom hidrogen?", "a": "Aku masih punya satu tangan kosong untuk menggandengmu! ⚛️"},
+    {"q": "Kenapa garam dapur (NaCl) tidak pernah takut hancur?", "a": "Karena kisi kristalnya punya ikatan ionik yang sangat kuat! 💎"},
+    {"q": "Apa mata pelajaran favorit molekul polar?", "a": "Geografi, karena mereka suka sekali membahas tentang kutub! 🧭"},
+    {"q": "Kenapa larutan penyangga (buffer) sangat penyabar?", "a": "Karena seberapa besar pun tekanan (asam/basa) dari luar, mereka tetap berusaha mempertahankan pH diri! 🧘"},
+    {"q": "Kenapa para ilmuwan tidak suka minum kopi di gelas beaker?", "a": "Karena takarannya terlalu presisi, bikin kopi kurang santai! 🧪"},
+    {"q": "Bagaimana cara mendeteksi apakah seseorang itu ahli kimia?", "a": "Minta dia mengeja kata 'Copper'. Kalau dia jawab 'Cu', berarti fix! 🔬"},
+    {"q": "Kenapa katalis tidak pernah masuk hitungan hasil akhir?", "a": "Karena tugas dia cuma mempercepat hubungan, lalu pergi tanpa minta imbalan... 🏃‍♂️"}
+]
 ]
 
 # ─── Sidebar navigasi ────────────────────────────────────────────────────────
