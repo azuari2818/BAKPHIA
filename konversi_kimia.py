@@ -112,6 +112,8 @@ def dari_molaritas(molaritas, satuan_tujuan, **kw):
         if denom <= 0:
             raise ValueError("Densitas terlalu kecil untuk konversi molalitas.")
         return (molaritas * 1000) / denom
+        if mr <= 0 or rho <= 0: 
+            raise ValueError("Mr dan densitas harus > 0")
     elif satuan_tujuan == "%b/v":
         return (molaritas * mr) / 10
     elif satuan_tujuan == "%b/b":
