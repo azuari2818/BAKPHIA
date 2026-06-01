@@ -176,7 +176,6 @@ JOKES = [
     {"q": "Apa yang dikatakan H₂SO₄ kepada Ba(OH)₂?", "a": "'Kita bisa netral, kok!' 🧪"},
     {"q": "Kenapa elektron tidak pernah tersesat?", "a": "Karena mereka selalu tahu orbitnya! 🌀"},
     {"q": "Bagaimana cara ilmuwan menyegarkan napas?", "a": "Dengan minum Helium — biar keren! He-he! 😆"}, 
-    JOKES = [
     {"q": "Kenapa natrium (Na) selalu jadi sahabat yang baik?", "a": "Karena dia sangat reaktif kalau diajak jalan-jalan! 💥"},
     {"q": "Apa sebutan untuk alkana yang sedang jatuh cinta?", "a": "Alkana-kenanglah daku di dalam hatimu... 🥰"},
     {"q": "Kenapa ikatan kovalen adalah hubungan ideal?", "a": "Karena prinsip mereka adalah saling berbagi (elektron) secara adil! 🤝"},
@@ -197,7 +196,6 @@ JOKES = [
     {"q": "Kenapa para ilmuwan tidak suka minum kopi di gelas beaker?", "a": "Karena takarannya terlalu presisi, bikin kopi kurang santai! 🧪"},
     {"q": "Bagaimana cara mendeteksi apakah seseorang itu ahli kimia?", "a": "Minta dia mengeja kata 'Copper'. Kalau dia jawab 'Cu', berarti fix! 🔬"},
     {"q": "Kenapa katalis tidak pernah masuk hitungan hasil akhir?", "a": "Karena tugas dia cuma mempercepat hubungan, lalu pergi tanpa minta imbalan... 🏃‍♂️"}
-]
 ]
 
 # ─── Sidebar navigasi ────────────────────────────────────────────────────────
