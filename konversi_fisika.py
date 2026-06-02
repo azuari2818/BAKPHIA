@@ -154,14 +154,6 @@ def widget_faktor(tabel, prefix, satuan_nama):
             hasil = nilai
         else:
             hasil = konversi_faktor(nilai, dari, ke, tabel)
-          # ✅ Simpan ke session_state
-        st.session_state[f"{prefix}_hasil"] = (nilai, dari, hasil, ke)
-
-    # ✅ Tampilkan hasil terakhir jika ada
-    if f"{prefix}_hasil" in st.session_state:
-        nilai, dari, hasil, ke = st.session_state[f"{prefix}_hasil"]
-        st.markdown(f"""<div class="result-box">...</div>""",
-                    unsafe_allow_html=True
 
         st.markdown(f"""
         <div class="result-box">
