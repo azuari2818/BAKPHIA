@@ -70,7 +70,17 @@ def ke_molaritas(nilai, satuan_asal, **kw):
     valensi = kw.get("valensi", 1)  # Valensi ion
     rho = kw.get("rho", 1.0)        # Densitas larutan (g/mL) — default air
     kg_pelarut = kw.get("kg_pelarut", 1.0)  # kg pelarut (untuk molalitas)
-
+    
+    # Validasi input sebelum hitung
+    if mr <= 0:
+        raise ValueError("Massa Molar (Mr) harus lebih dari 0.")
+    if rho <= 0:
+        raise ValueError("Densitas larutan harus lebih dari 0.")
+    if valensi < 1:
+        raise ValueError("Valensi minimal 1.")
+    if nilai < 0:
+        raise ValueError("Nilai konsentrasi tidak boleh negatif.")
+        
     if satuan_asal == "Normalitas (N)":
         return nilai / valensi
     elif satuan_asal == "Molaritas (M)":
