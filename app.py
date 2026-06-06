@@ -1,5 +1,5 @@
 import streamlit as st
-import random
+
 from konversi_kimia import halaman_kimia
 from konversi_fisika import halaman_fisika
 
