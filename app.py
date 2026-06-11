@@ -309,7 +309,7 @@ def tampilkan_kreator():
             </p>
         </div>
     """, unsafe_allow_html=True)
- 
+
     kreator = [
         {"nama": "Dzahwan Alamsyah",       "nim": "2560616", "inisial": "DA", "warna_bg": "#E6F1FB", "warna_teks": "#0C447C"},
         {"nama": "Irma Dwi Anggreani",      "nim": "2560645", "inisial": "ID", "warna_bg": "#E1F5EE", "warna_teks": "#0F6E56"},
@@ -317,7 +317,7 @@ def tampilkan_kreator():
         {"nama": "Nasya Nur Zafira",        "nim": "2560711", "inisial": "NN", "warna_bg": "#EEEDFE", "warna_teks": "#534AB7"},
         {"nama": "Shafa Amalia Shaleha M.", "nim": "2560777", "inisial": "SA", "warna_bg": "#FBEAF0", "warna_teks": "#993556"},
     ]
- 
+
     cols = st.columns(len(kreator))
     for col, k in zip(cols, kreator):
         with col:
@@ -350,7 +350,6 @@ def tampilkan_kreator():
                     </div>
                 </div>
             """, unsafe_allow_html=True)
-
 # ─────────────────────────────────────────────────────────────────────────────
 #  HALAMAN KONVERSI KIMIA
 # ─────────────────────────────────────────────────────────────────────────────
