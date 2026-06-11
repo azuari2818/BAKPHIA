@@ -198,7 +198,9 @@ JOKES = [
     {"q": "Kenapa katalis tidak pernah masuk hitungan hasil akhir?", "a": "Karena tugas dia cuma mempercepat hubungan, lalu pergi tanpa minta imbalan... 🏃‍♂️"}
 ]
 
-# ─── Sidebar navigasi ────────────────────────────────────────────────────────
+# ==========================================
+# SIDEBAR NAVIGASI
+# ==========================================
 with st.sidebar:
     st.markdown("## ⚗️ **BAKPHIA**")
     st.markdown("*Bantuan Konversi Fisika & Kimia*")
@@ -214,7 +216,9 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
 
-# ─── Fungsi Tampilkan Kreator ────────────────────────────────────────────────
+# ==========================================
+# FUNGSI TIM PENGEMBANG
+# ==========================================
 def tampilkan_kreator():
     st.markdown("---")
     st.markdown("""
@@ -269,11 +273,10 @@ def tampilkan_kreator():
                 </div>
             """, unsafe_allow_html=True)
 
-# ─────────────────────────────────────────────────────────────────────────────
-#  LOGIK HALAMAN
-# ─────────────────────────────────────────────────────────────────────────────
+# ==========================================
+# HALAMAN BERANDA
+# ==========================================
 if menu == "🏠 Beranda":
-    # Header
     st.markdown('<div class="hero-title">BAKPHIA</div>', unsafe_allow_html=True)
     st.markdown('<div class="hero-sub">Bantuan Konversi Fisika &amp; Kimia</div>', unsafe_allow_html=True)
     st.markdown('<hr class="styled">', unsafe_allow_html=True)
@@ -321,7 +324,6 @@ if menu == "🏠 Beranda":
     with col2:
         st.markdown('<div class="section-header">Jokes Kimia 🧪</div>', unsafe_allow_html=True)
 
-        # Random joke — pakai session_state agar konsisten per sesi
         if "joke_idx" not in st.session_state:
             st.session_state.joke_idx = random.randint(0, len(JOKES) - 1)
 
@@ -352,11 +354,14 @@ if menu == "🏠 Beranda":
         </div>
         """, unsafe_allow_html=True)
 
-    # Memanggil tim pengembang di bagian paling bawah halaman beranda
     tampilkan_kreator()
 
+# ==========================================
+# HALAMAN NAVIGASI LAIN
+# ==========================================
 elif menu == "🧪 Konversi Kimia":
     halaman_kimia()
 
 elif menu == "⚛️ Konversi Fisika":
+    halaman_fisika()":
     halaman_fisika()
