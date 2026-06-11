@@ -14,7 +14,7 @@ st.set_page_config(
 # ─── CSS global ─────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700;900&family=DM+Sans:wght=300;400;500&display=swap');
 
 html, body, [class*="css"] {
     font-family: 'DM Sans', sans-serif;
@@ -180,7 +180,7 @@ JOKES = [
     {"q": "Apa sebutan untuk alkana yang sedang jatuh cinta?", "a": "Alkana-kenanglah daku di dalam hatimu... 🥰"},
     {"q": "Kenapa ikatan kovalen adalah hubungan ideal?", "a": "Karena prinsip mereka adalah saling berbagi (elektron) secara adil! 🤝"},
     {"q": "Apa yang dikatakan asam klorida (HCl) saat mau berpisah dengan NaOH?", "a": "Sampai jumpa di titik ekivalen, ya! 💧"},
-    {"q": "Kenapa unsur halogen (Golongan VIIA) sangat agresif?", "a": "Karena mereka kurang satu elektron lagi untuk mencapai kebahagiaan sempurna (oktet)! 💍"},
+    {"q": "Kenapa unsur halogen (Golongan VIIA) sangat agresif?", "a": "Karena mereka kurang satu elektron lagi untuk mencapai kebahagiaan sempurna (oktet)? 💍"},
     {"q": "Kenapa es batu mengapung di atas air?", "a": "Biar dia bisa pamer kalau densitasnya lebih rendah! 🧊"},
     {"q": "Kenapa gas mulia (Golongan VIIIA) selalu jomblo?", "a": "Karena mereka sudah stabil dan enggan berikatan dengan siapa pun! 🛑"},
     {"q": "Apa bedanya ahli kimia organik dengan orang biasa saat melihat cincin?", "a": "Orang biasa melihat berlian, ahli kimia melihat struktur Benzena! 💍⬡"},
@@ -214,89 +214,7 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
 
-# ─────────────────────────────────────────────────────────────────────────────
-#  HALAMAN BERANDA
-# ─────────────────────────────────────────────────────────────────────────────
-if menu == "🏠 Beranda":
-    # Header
-    st.markdown('<div class="hero-title">BAKPHIA</div>', unsafe_allow_html=True)
-    st.markdown('<div class="hero-sub">Bantuan Konversi Fisika &amp; Kimia</div>', unsafe_allow_html=True)
-    st.markdown('<hr class="styled">', unsafe_allow_html=True)
-
-    col1, col2 = st.columns([3, 2], gap="large")
-
-    with col1:
-        st.markdown('<div class="section-header">Tentang BAKPHIA</div>', unsafe_allow_html=True)
-
-        st.markdown("""
-        <div class="card">
-            <h3>🎯 Tujuan</h3>
-            <p>BAKPHIA hadir sebagai alat bantu konversi satuan yang dirancang khusus untuk
-            pelajar, mahasiswa, dan praktisi di bidang Fisika dan Kimia. Tujuan utama kami adalah
-            menyederhanakan proses konversi satuan yang sering memakan waktu dan rentan
-            terhadap kesalahan perhitungan manual.</p>
-        </div>
-        """, unsafe_allow_html=True)
-
-        st.markdown("""
-        <div class="card">
-            <h3>✅ Manfaat</h3>
-            <p>
-            🔬 <b>Konversi Kimia</b> — Ubah satuan konsentrasi larutan (Molaritas, Normalitas,
-            Molalitas, %b/v, %b/b, ppm, ppb) dengan cepat dan akurat.<br><br>
-            🔭 <b>Konversi Fisika</b> — Konversi berbagai besaran fisika: panjang, massa, suhu,
-            energi, dan tekanan dalam satu platform terintegrasi.<br><br>
-            ⚡ <b>Hemat Waktu</b> — Tidak perlu lagi menghitung manual atau mencari faktor
-            konversi satu per satu.<br><br>
-            📱 <b>Mudah Digunakan</b> — Antarmuka intuitif yang bisa diakses kapan saja dan
-            di mana saja.
-            </p>
-        </div>
-        """, unsafe_allow_html=True)
-
-        st.markdown("""
-        <div class="card">
-            <h3>🚀 Cara Penggunaan</h3>
-            <p>Pilih menu <b>Konversi Kimia</b> atau <b>Konversi Fisika</b> pada panel navigasi
-            di sebelah kiri. Masukkan nilai yang ingin dikonversi, pilih satuan asal dan satuan
-            tujuan, lalu klik <b>Konversi</b> untuk melihat hasilnya secara instan.</p>
-        </div>
-        """, unsafe_allow_html=True)
-
-    with col2:
-        st.markdown('<div class="section-header">Jokes Kimia 🧪</div>', unsafe_allow_html=True)
-
-        # Random joke — pakai session_state agar konsisten per sesi tapi bisa di-refresh
-        if "joke_idx" not in st.session_state:
-            st.session_state.joke_idx = random.randint(0, len(JOKES) - 1)
-
-        joke = JOKES[st.session_state.joke_idx]
-        st.markdown(f"""
-        <div class="jokes-card">
-            <div class="label">⚗️ Chemistry Joke of the Day</div>
-            <div class="joke-text">{joke['q']}</div>
-            <div class="punchline">{joke['a']}</div>
-        </div>
-        """, unsafe_allow_html=True)
-
-        if st.button("🎲 Jokes Lain!", key="new_joke"):
-            st.session_state.joke_idx = random.randint(0, len(JOKES) - 1)
-            st.rerun()
-        ] 
-        st.markdown("""
-        <div class="card" style="margin-bottom:.6rem">
-            <h3 style="font-size:1rem">🧪 Konversi Kimia</h3>
-            <p style="font-size:.88rem">Normalitas &middot; Molaritas &middot; Molalitas &middot; %b/v &middot; %b/b &middot; ppm &middot; ppb</p>
-        </div>
-        """, unsafe_allow_html=True)
-
-        st.markdown("""
-        <div class="card">
-            <h3 style="font-size:1rem">🔮 Konversi Fisika</h3>
-            <p style="font-size:.88rem">Panjang &middot; Massa &middot; Suhu &middot; Energi &middot; Tekanan</p>
-        </div>
-        """, unsafe_allow_html=True)
-
+# ─── Fungsi Tampilkan Kreator ────────────────────────────────────────────────
 def tampilkan_kreator():
     st.markdown("---")
     st.markdown("""
@@ -350,14 +268,95 @@ def tampilkan_kreator():
                     </div>
                 </div>
             """, unsafe_allow_html=True)
+
 # ─────────────────────────────────────────────────────────────────────────────
-#  HALAMAN KONVERSI KIMIA
+#  LOGIK HALAMAN
 # ─────────────────────────────────────────────────────────────────────────────
+if menu == "🏠 Beranda":
+    # Header
+    st.markdown('<div class="hero-title">BAKPHIA</div>', unsafe_allow_html=True)
+    st.markdown('<div class="hero-sub">Bantuan Konversi Fisika &amp; Kimia</div>', unsafe_allow_html=True)
+    st.markdown('<hr class="styled">', unsafe_allow_html=True)
+
+    col1, col2 = st.columns([3, 2], gap="large")
+
+    with col1:
+        st.markdown('<div class="section-header">Tentang BAKPHIA</div>', unsafe_allow_html=True)
+
+        st.markdown("""
+        <div class="card">
+            <h3>🎯 Tujuan</h3>
+            <p>BAKPHIA hadir sebagai alat bantu konversi satuan yang dirancang khusus untuk
+            pelajar, mahasiswa, dan praktisi di bidang Fisika dan Kimia. Tujuan utama kami adalah
+            menyederhanakan proses konversi satuan yang sering memakan waktu dan rentan
+            terhadap kesalahan perhitungan manual.</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("""
+        <div class="card">
+            <h3>✅ Manfaat</h3>
+            <p>
+            🔬 <b>Konversi Kimia</b> — Ubah satuan konsentrasi larutan (Molaritas, Normalitas,
+            Molalitas, %b/v, %b/b, ppm, ppb) dengan cepat dan akurat.<br><br>
+            🔭 <b>Konversi Fisika</b> — Konversi berbagai besaran fisika: panjang, massa, suhu,
+            energi, dan tekanan dalam satu platform terintegrasi.<br><br>
+            ⚡ <b>Hemat Waktu</b> — Tidak perlu lagi menghitung manual atau mencari faktor
+            konversi satu per satu.<br><br>
+            📱 <b>Mudah Digunakan</b> — Antarmuka intuitif yang bisa diakses kapan saja dan
+            di mana saja.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("""
+        <div class="card">
+            <h3>🚀 Cara Penggunaan</h3>
+            <p>Pilih menu <b>Konversi Kimia</b> atau <b>Konversi Fisika</b> pada panel navigasi
+            di sebelah kiri. Masukkan nilai yang ingin dikonversi, pilih satuan asal dan satuan
+            tujuan, lalu klik <b>Konversi</b> untuk melihat hasilnya secara instan.</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col2:
+        st.markdown('<div class="section-header">Jokes Kimia 🧪</div>', unsafe_allow_html=True)
+
+        # Random joke — pakai session_state agar konsisten per sesi
+        if "joke_idx" not in st.session_state:
+            st.session_state.joke_idx = random.randint(0, len(JOKES) - 1)
+
+        joke = JOKES[st.session_state.joke_idx]
+        st.markdown(f"""
+        <div class="jokes-card">
+            <div class="label">⚗️ Chemistry Joke of the Day</div>
+            <div class="joke-text">{joke['q']}</div>
+            <div class="punchline">{joke['a']}</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        if st.button("🎲 Jokes Lain!", key="new_joke"):
+            st.session_state.joke_idx = random.randint(0, len(JOKES) - 1)
+            st.rerun()
+         
+        st.markdown("""
+        <div class="card" style="margin-bottom:.6rem; margin-top:1.5rem;">
+            <h3 style="font-size:1rem">🧪 Konversi Kimia</h3>
+            <p style="font-size:.88rem">Normalitas &middot; Molaritas &middot; Molalitas &middot; %b/v &middot; %b/b &middot; ppm &middot; ppb</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("""
+        <div class="card">
+            <h3 style="font-size:1rem">🔮 Konversi Fisika</h3>
+            <p style="font-size:.88rem">Panjang &middot; Massa &middot; Suhu &middot; Energi &middot; Tekanan</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    # Memanggil tim pengembang di bagian paling bawah halaman beranda
+    tampilkan_kreator()
+
 elif menu == "🧪 Konversi Kimia":
     halaman_kimia()
 
-# ─────────────────────────────────────────────────────────────────────────────
-#  HALAMAN KONVERSI FISIKA
-# ─────────────────────────────────────────────────────────────────────────────
 elif menu == "⚛️ Konversi Fisika":
     halaman_fisika()
