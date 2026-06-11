@@ -290,10 +290,11 @@ if menu == "🏠 Beranda":
             <h3 style="font-size:1rem">🧪 Konversi Kimia</h3>
             <p style="font-size:.88rem">Normalitas · Molaritas · Molalitas · %b/v · %b/b · ppm · ppb</p>
         </div>
-       st.markdown("""
+         """, unsafe_allow_html=True)
+        st.markdown("""
         <div class="card">
-        <h3 style="font-size:1rem">🔮 Konversi Fisika</h3>
-        <p style="font-size:.88rem">Panjang &middot; Massa &middot; Suhu &middot; Energi &middot; Tekanan</p>
+            <h3 style="font-size:1rem">🔮 Konversi Fisika</h3>
+            <p style="font-size:.88rem">Panjang &middot; Massa &middot; Suhu &middot; Energi &middot; Tekanan</p>
         </div>
         """, unsafe_allow_html=True)
 
