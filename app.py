@@ -295,6 +295,61 @@ if menu == "🏠 Beranda":
             <p style="font-size:.88rem">Panjang · Massa · Suhu · Energi · Tekanan</p>
         </div>
         """, unsafe_allow_html=True)
+ator section · PY
+
+def tampilkan_kreator():
+    st.markdown("---")
+    st.markdown("""
+        <div style="text-align:center; margin-bottom: 1rem;">
+            <p style="font-size:12px; color:#888; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 4px;">
+                Tim Pengembang
+            </p>
+            <p style="font-size:20px; font-weight:500; margin:0;">
+                Kreator Aplikasi
+            </p>
+        </div>
+    """, unsafe_allow_html=True)
+ 
+    kreator = [
+        {"nama": "Dzahwan Alamsyah",       "nim": "2560616", "inisial": "DA", "warna_bg": "#E6F1FB", "warna_teks": "#0C447C"},
+        {"nama": "Irma Dwi Anggreani",      "nim": "2560645", "inisial": "ID", "warna_bg": "#E1F5EE", "warna_teks": "#0F6E56"},
+        {"nama": "Muhammad Azuari",         "nim": "2560677", "inisial": "MA", "warna_bg": "#FAEEDA", "warna_teks": "#854F0B"},
+        {"nama": "Nasya Nur Zafira",        "nim": "2560711", "inisial": "NN", "warna_bg": "#EEEDFE", "warna_teks": "#534AB7"},
+        {"nama": "Shafa Amalia Shaleha M.", "nim": "2560777", "inisial": "SA", "warna_bg": "#FBEAF0", "warna_teks": "#993556"},
+    ]
+ 
+    cols = st.columns(len(kreator))
+    for col, k in zip(cols, kreator):
+        with col:
+            st.markdown(f"""
+                <div style="
+                    background: white;
+                    border: 0.5px solid #e0e0e0;
+                    border-radius: 12px;
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                    text-align: center;
+                ">
+                    <div style="
+                        width: 48px; height: 48px;
+                        border-radius: 50%;
+                        background: {k['warna_bg']};
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: {k['warna_teks']};
+                    ">{k['inisial']}</div>
+                    <div>
+                        <p style="font-size:13px; font-weight:500; margin:0 0 2px; color:#111;">{k['nama']}</p>
+                        <p style="font-size:12px; color:#888; margin:0;">{k['nim']}</p>
+                    </div>
+                </div>
+            """, unsafe_allow_html=True)
 
 # ─────────────────────────────────────────────────────────────────────────────
 #  HALAMAN KONVERSI KIMIA
