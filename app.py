@@ -282,15 +282,14 @@ if menu == "🏠 Beranda":
         if st.button("🎲 Jokes Lain!", key="new_joke"):
             st.session_state.joke_idx = random.randint(0, len(JOKES) - 1)
             st.rerun()
-
-        st.markdown("---")
-        st.markdown("### 🗂️ Menu Tersedia")
+        ] 
         st.markdown("""
         <div class="card" style="margin-bottom:.6rem">
             <h3 style="font-size:1rem">🧪 Konversi Kimia</h3>
-            <p style="font-size:.88rem">Normalitas · Molaritas · Molalitas · %b/v · %b/b · ppm · ppb</p>
+            <p style="font-size:.88rem">Normalitas &middot; Molaritas &middot; Molalitas &middot; %b/v &middot; %b/b &middot; ppm &middot; ppb</p>
         </div>
-         """, unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
+
         st.markdown("""
         <div class="card">
             <h3 style="font-size:1rem">🔮 Konversi Fisika</h3>
