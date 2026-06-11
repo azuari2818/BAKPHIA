@@ -295,7 +295,6 @@ if menu == "🏠 Beranda":
             <p style="font-size:.88rem">Panjang · Massa · Suhu · Energi · Tekanan</p>
         </div>
         """, unsafe_allow_html=True)
-ator section · PY
 
 def tampilkan_kreator():
     st.markdown("---")
