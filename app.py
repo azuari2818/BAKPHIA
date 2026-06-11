@@ -363,5 +363,4 @@ elif menu == "🧪 Konversi Kimia":
     halaman_kimia()
 
 elif menu == "⚛️ Konversi Fisika":
-    halaman_fisika()":
     halaman_fisika()
