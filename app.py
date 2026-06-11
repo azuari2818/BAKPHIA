@@ -292,7 +292,7 @@ if menu == "🏠 Beranda":
         </div>
         <div class="card">
             <h3 style="font-size:1rem">⚛️ Konversi Fisika</h3>
-            <p style="font-size:.88rem">Panjang · Massa · Suhu · Energi · Tekanan</p>
+            <p style="font-size:.88rem">Panjang &middot; Massa &middot; Suhu &middot; Energi &middot; Tekanan</p>
         </div>
         """, unsafe_allow_html=True)
 
